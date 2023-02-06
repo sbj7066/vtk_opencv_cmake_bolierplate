@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Configurate project
-project(vtk_cmake_boilerplate LANGUAGES CXX)
+project(vtk_opencv_cmake_boilerplate LANGUAGES CXX)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
 if(CMAKE_VERSION VERSION_LESS "3.7.0")
