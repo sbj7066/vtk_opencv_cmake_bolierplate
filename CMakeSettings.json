@@ -1,0 +1,48 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "variables": [
+        {
+          "name": "OPENCV_DIR",
+          "value": "//192.168.0.113/Imagoworks/Libraries/opencv/x64/vc15/lib",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5_DIR",
+          "value": "C:/Qt/5.14.2/msvc2017_64/lib/cmake/Qt5",
+          "type": "PATH"
+        },
+        {
+          "name": "VTK_DIR",
+          "value": "\\\\192.168.0.113\\Imagoworks\\Libraries\\VTK-9.1.0\\Release\\lib\\cmake\\vtk-9.1",
+          "type": "PATH"
+        },
+        {
+          "name": "Eigen3_INCLUDE_DIR",
+          "value": "//192.168.0.113/Imagoworks/Libraries/eigen-3.4.0/share/eigen3/cmake",
+          "type": "PATH"
+        }
+      ]
+    }
+  ]
+}
